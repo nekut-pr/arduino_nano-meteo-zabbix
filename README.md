@@ -1,3 +1,7 @@
+/etc/crontab
+*/3 *	* * * root	sh /home/admin/meteo/stat.sh
+
+/home/admin/meteo/stat.sh
 #!/bin/bash
 curl 'http://ip' > /home/admin/meteo/stat.txt
 
